@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>navigation</name>
+  <name>navi</name>
   <version>1.0.0</version>
-  <description>The navigation package</description>
+  <description>The navi package</description>
 
   <author email="kimtj5521@gmail.com">tjk</author>
   <maintainer email="kimtj5521@gmail.com">tjk</maintainer>
 
   <license>GPLv3</license>
 
-  <url>https://github.com/kimtj5521/</url>
+  <url>https://github.com/kimtj5521/navi</url>
 
   <buildtool_depend>catkin</buildtool_depend>
 
