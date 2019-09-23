@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+  <!--include file="$(find microstrain_3dm_gx5_45)/launch/microstrain_25.launch" />
+  <include file="$(find gps)/launch/gps.launch" /-->
+  <node pkg="navi" type="navi_node" name="navi_node" output="screen" />
+  <!--node pkg="navi" type="navi_node" name="navi_node" output="screen" respawn="True" /-->
+</launch>
