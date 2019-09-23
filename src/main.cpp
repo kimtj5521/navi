@@ -150,7 +150,7 @@ void subscribeCallback_gps(const std_msgs::Float64MultiArray& msg)
     m_gps_data.pos_y = m_dGPS_UTM_Y - m_dRef_UTM_Y;
 }
 
-void subscribeCallback_odom(const navigation::rio_to_pc& msg)
+void subscribeCallback_odom(const navi::rio_to_pc& msg)
 {
     m_odom_data_prev = m_odom_data;
 
@@ -166,7 +166,7 @@ int main(int argc, char** argv)
 {
     interval = 0.01;
 
-    ros::init(argc, argv, "navigation");
+    ros::init(argc, argv, "navi");
     ros::NodeHandle nh;
 
     ros::Publisher pub_pose_estimation = nh.advertise<std_msgs::Float64MultiArray>("POS_T",1);
