@@ -279,11 +279,11 @@ int main(int argc, char** argv)
 
         //////// forward/backward heading calculate /////////
         if(vehicle_speed > update_threshold_velocity){
-            h_gps = m_gps_data.gprmc_gps_heading*PI/180.0;
+            h_gps = (-1.0*m_gps_data.gprmc_gps_heading+90.0)*PI/180.0;
             h_gps = m_ekf.AngDiff(h_gps);
         }
         if(vehicle_speed < (-1.0*update_threshold_velocity)){ // backward threshold is -3.0 km/h
-            h_gps = m_gps_data.gprmc_gps_heading*PI/180.0 - PI;
+            h_gps = (-1.0*m_gps_data.gprmc_gps_heading+90.0)*PI/180.0 - PI;
             h_gps = m_ekf.AngDiff(h_gps);
         }
         /////////////////////////////////////////////////////
